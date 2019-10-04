@@ -14,9 +14,21 @@ Install and Config:
 4. Install Suricata:
 > sudo apt-get install suricata 
 
+5. Install IPS mode:
+> sudo apt-get -y install libnetfilter-queue-dev libnetfilter-queue1 libnfnetlink-dev libnfnetlink0
 
+6. Config Address Group:
+> address-groups:HOME_NET: "[192.168.100.0/24]" 
+#HOME_NET: "[192.168.0.0/16,10.0.0.0/8,172.16.0.0/12]"
+#HOME_NET: "[192.168.0.0/16]"
+#HOME_NET: "[10.0.0.0/8]"
 
-
+7. Config Suricata Active rules:
+> default-rule-path: /etc/suricata/rules
+rule-files:
+-emerging-clabs_dos.rules
+-emerging-clabs_metasploit.rules
+-emerging-clabs_nmap.rules
 
 
 
