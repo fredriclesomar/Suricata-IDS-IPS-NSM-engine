@@ -1,6 +1,6 @@
 # Suricata_Ubuntu18_LTS
 Intrution Detection Prevention System Suricata
-Install and Config:
+A. Install and Config:
 
 1. Add repository stable version: 
 > sudo add-apt-repository ppa:oisf/suricata-stable
@@ -29,6 +29,18 @@ rule-files:
 -emerging-clabs_dos.rules
 -emerging-clabs_metasploit.rules
 -emerging-clabs_nmap.rules
+
+
+B. Testing:
+
+1. Start Engine:
+  <img src="https://raw.githubusercontent.com/fredriclesomar/Suricata_Ubuntu18_LTS/master/img/Start_Engine.png" width="750" title="Engine Started">
+</p>
+
+
+
+
+
 
 
 
