@@ -38,7 +38,8 @@ B. Testing:
   <img src="https://raw.githubusercontent.com/fredriclesomar/Suricata_Ubuntu18_LTS/master/img/Start_Engine.png" width="750" title="Engine Started">
 </p>
 
-Realtime monitoring, follow the command:
+Realtime monitoring on 2nd terminal, follow the command:
+Putty(optional).
 > sudo tail -f /var/log/suricata/fast.log
 
 2. Scanning TCP report:
