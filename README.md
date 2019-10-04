@@ -37,6 +37,9 @@ B. Testing:
   <img src="https://raw.githubusercontent.com/fredriclesomar/Suricata_Ubuntu18_LTS/master/img/Start_Engine.png" width="750" title="Engine Started">
 </p>
 
+Realtime monitoring, follow the command:
+> sudo tail -f /var/log/suricata/fast.log
+
 2. Scanning TCP report:
   <img src="https://raw.githubusercontent.com/fredriclesomar/Suricata_Ubuntu18_LTS/master/img/nmap_TCPscanning_report.png" width="750" title="Engine Started">
 </p>
