@@ -1,0 +1,25 @@
+
+#
+# $Id: emerging-clabs_metasploit.rules $
+# Emerging Threats Clabs DROP List rules.
+# Created : Lesomar Fredric
+# Firewall Engine : Suricata IDS/IPS, NSM
+# Please submit any feedback or ideas to indosecteam@gmail.com
+#
+#
+#*******************************************************************************
+#
+#
+#
+#
+#  Generated 2019-04-01 00:10:01 EDT
+#
+#alert tcp $EXTERNAL_NET !$HTTP_PORTS -> $HOME_NET any (msg:"Aktivitas Exploit Terdeteksi!"; flow:established;  content:"|7F|ELF"; fast_pattern; content:"|00 00 00 00 00 00 00 00|"; distance:0; flowbits:set,ET.ELFDownload; reference:url,www.itee.uq.edu.au/~cristina/students/david/honoursThesis96/bff.htm; reference:url,doc.emergingthreats.net/bin/view/Main/2000418; classtype:policy-violation; sid:2000418; rev:16; metadata:created_at 2010_07_30, updated_at 2017_02_03;)
+reject tcp $EXTERNAL_NET !$HTTP_PORTS -> $HOME_NET any (msg:"ELF Program Mengandung Bahaya dan Telah Berhasil Reject!"; flow:established;  content:"|7F|ELF"; fast_pattern; content:"|00 00 00 00 00 00 00 00|"; distance:0; flowbits:set,ET.ELFDownload; reference:url,www.itee.uq.edu.au/~cristina/students/david/honoursThesis96/bff.htm; reference:url,doc.emergingthreats.net/bin/view/Main/2000418; classtype:policy-violation; sid:2000418; rev:16; metadata:created_at 2010_07_30, updated_at 2017_02_03;)
+
+
+
+
+
+
+
