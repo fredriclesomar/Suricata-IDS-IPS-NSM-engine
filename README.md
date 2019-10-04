@@ -37,8 +37,21 @@ B. Testing:
   <img src="https://raw.githubusercontent.com/fredriclesomar/Suricata_Ubuntu18_LTS/master/img/Start_Engine.png" width="750" title="Engine Started">
 </p>
 
+2. Scanning TCP report:
+  <img src="https://raw.githubusercontent.com/fredriclesomar/Suricata_Ubuntu18_LTS/master/img/nmap_TCPscanning_report.png" width="750" title="Engine Started">
+</p>
 
+3. Scanning UDP report:
+  <img src="https://raw.githubusercontent.com/fredriclesomar/Suricata_Ubuntu18_LTS/master/img/nmap_UDPscanning_report.png" width="750" title="Engine Started">
+</p>
 
+4. DOS report:
+  <img src="https://raw.githubusercontent.com/fredriclesomar/Suricata_Ubuntu18_LTS/master/img/Hping3_DOS_report.png" width="750" title="Engine Started">
+</p>
+
+4. Exploit report:
+  <img src="https://raw.githubusercontent.com/fredriclesomar/Suricata_Ubuntu18_LTS/master/img/ELF_Metasploit_report.png" width="750" title="Engine Started">
+</p>
 
 
 
