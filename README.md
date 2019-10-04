@@ -2,6 +2,7 @@
 Intrution Detection Prevention System Suricata
 Install and Config:
 
-1. Add and update repository stable version: 
+1. a). Add repository stable version: 
 > sudo add-apt-repository ppa:oisf/suricata-stable
+   b). Update:
 > sudo apt-get update
