@@ -5,8 +5,3 @@
 alert tcp any any -> $HOME_NET any (msg: "TCP Scan by NMAP terdeteksi!";sid:1000003; rev:2;)
 #scan UDP by Nmap
 alert udp any any -> $HOME_NET any ( msg:"UDP scan by NMAP terdeteksi!"; sid:1000004; rev:1;)
-
-#Drop tcp nmap
-#drop tcp any any -> 192.168.100.67 any (msg:"Drop TCP Scan NMAP"; flow:established,to_server; flowbits:isset,is_proto_irc; content:"NICK "; pcre:"/NICK .*USA.*[0-9]{3,}/i"; reference:url,doc.emergingthreats.net/2008124; classtype:trojan-activity; sid:2008124; rev:2;)
-
-
