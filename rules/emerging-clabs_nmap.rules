@@ -2,6 +2,6 @@
 #alert icmp any any -> $HOME_NET any (msg:"Permintaan Ping terdeteksi!"; priority:03; itype:8; sid:1000000;)
 
 #scan TCP by Nmap
-alert tcp any any -> $HOME_NET any (msg: "TCP Scan by NMAP terdeteksi!";sid:1000003; rev:2;)
+alert tcp any any -> $HOME_NET any (msg: "TCP Scan by NMAP terdeteksi!";sid:1000003; rev:3;)
 #scan UDP by Nmap
-alert udp any any -> $HOME_NET any ( msg:"UDP scan by NMAP terdeteksi!"; sid:1000004; rev:1;)
+alert udp any any -> $HOME_NET any ( msg:"UDP scan by NMAP terdeteksi!"; sid:1000004; rev:3;)
