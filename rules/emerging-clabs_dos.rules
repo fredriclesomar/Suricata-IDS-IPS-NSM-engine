@@ -10,6 +10,6 @@
 #
 #Dos Flooding -  open DROP by
 
-alert tcp any any -> any any (flags: S; msg:"TCP DoS Detect"; flow: stateless; detection_filter:track by_dst, count 100, seconds 5; sid:1000005;rev:1;)
-drop tcp any any -> any any (flags: S; msg:"Possible TCP DoS"; flow: stateless; detection_filter:track by_dst, count 100, seconds 5; sid:1000006;rev:1;)
+alert tcp any any -> any any (flags: S; msg:"TCP DoS Detect"; flow: stateless; detection_filter:track by_dst, count 100, seconds 5; sid:1000005;rev:2;)
+drop tcp any any -> any any (flags: S; msg:"Possible TCP DoS"; flow: stateless; detection_filter:track by_dst, count 100, seconds 5; sid:1000006;rev:2;)
 
