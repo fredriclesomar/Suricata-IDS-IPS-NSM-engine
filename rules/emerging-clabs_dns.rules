@@ -1,0 +1,14 @@
+# $Id: emerging-clabs_DNS.rules $
+# Emerging Threats Clabs DROP List rules.
+#
+# Please submit any feedback or ideas to indosecteam@gmail.com
+#
+#
+#*******************************************************************************
+#
+#  Generated 2020-02-21 00:140:22 EDT
+#
+#DNS Amplification -  open Rejecy by
+
+reject udp $HTTP_SERVERS any -> any 53 (msg:"DNS Recrusion detection"; flow: stateless; detection_filter:track by_dst, src_ip, count 2; attack_id: 8976; name: \"MS.DNS.Recursion.Requested\"; ipver: 4; service: DNS; pattern: |0100|; distance:2; sid:1008976; rev:3; metadata:affected_product DNS_Amplification, signature_severity Critical, Create_at 2020_02_21, updated_at 2020_03_14;)
+
